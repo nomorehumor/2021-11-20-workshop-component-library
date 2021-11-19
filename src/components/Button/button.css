@@ -1,0 +1,21 @@
+.storybook-button {
+  font-weight: 700;
+  border: 0;
+  border-radius:  var(--border-radius-regular);
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  font-size: 16px;
+  padding: 10px 15px;
+}
+
+.storybook-button--primary {
+  color: white;
+  background-color: var(--color-primary);
+}
+
+.storybook-button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
