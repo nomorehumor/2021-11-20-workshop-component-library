@@ -1,8 +1,22 @@
-import React from 'react';
+import React from "react";
+import { ApplicationPageStep } from "../../components/ApplicationPageStep";
 
-export const ApplicationPageConditions = () =>  (
-    <div>
+interface ApplicationPageConditionsProps {
+  handleGoToNextStep: (pageData: unknown) => void;
+}
 
-    </div>
-);
+export const ApplicationPageConditions = ({
+  handleGoToNextStep,
+}: ApplicationPageConditionsProps) => {
+  // --- YOUR CODE HERE ---
 
+  return (
+    <ApplicationPageStep
+      handleGoToNextStep={handleGoToNextStep}
+      pageData={{}}
+      nextButtonLabel="Submit"
+    >
+      <div></div>
+    </ApplicationPageStep>
+  );
+};

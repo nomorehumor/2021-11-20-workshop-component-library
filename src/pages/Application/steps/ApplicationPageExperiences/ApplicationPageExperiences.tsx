@@ -1,8 +1,22 @@
-import React from 'react';
+import React from "react";
+import { ApplicationPageStep } from "../../components/ApplicationPageStep";
 
-export const ApplicationPageExperiences = () =>  (
-    <div>
+interface ApplicationPageExperiencesProps {
+  handleGoToNextStep: (pageData: unknown) => void;
+}
 
-    </div>
-);
+export const ApplicationPageExperiences = ({
+  handleGoToNextStep,
+}: ApplicationPageExperiencesProps) => {
+  // --- YOUR CODE HERE ---
 
+  return (
+    <ApplicationPageStep
+      handleGoToNextStep={handleGoToNextStep}
+      pageData={{}}
+      nextButtonLabel="Next Step"
+    >
+      <div></div>
+    </ApplicationPageStep>
+  );
+};

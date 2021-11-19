@@ -1,0 +1,6 @@
+.ApplicationPage {
+  width: 100%;
+  display: flex;
+  max-width: 800px;
+  flex-direction: column;
+}
