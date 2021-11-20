@@ -1,4 +1,4 @@
-.storybook-button {
+.Button {
   font-weight: 700;
   border: 0;
   border-radius:  var(--border-radius-regular);
@@ -9,13 +9,13 @@
   padding: 10px 15px;
 }
 
-.storybook-button--primary {
+.Button--primary {
   color: white;
   background-color: var(--color-primary);
 }
 
-.storybook-button--secondary {
-  color: #333;
+.Button--secondary {
+  color: var(--color-primary);
   background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  box-shadow: var(--color-primary) 0px 0px 0px 1px inset;
 }

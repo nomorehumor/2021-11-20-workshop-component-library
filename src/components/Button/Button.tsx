@@ -1,5 +1,5 @@
-import React from 'react';
-import './button.css';
+import React from "react";
+import "./Button.css";
 
 interface ButtonProps {
   /**
@@ -19,19 +19,11 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
-  primary = false,
-  label,
-  ...props
-}: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+export const Button = ({ primary = false, label, ...props }: ButtonProps) => {
+  const mode = primary ? "Button--primary" : "Button--secondary";
 
   return (
-    <button
-      type="button"
-      className={['storybook-button', mode].join(' ')}
-      {...props}
-    >
+    <button type="button" className={["Button", mode].join(" ")} {...props}>
       {label}
     </button>
   );
