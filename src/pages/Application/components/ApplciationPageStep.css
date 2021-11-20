@@ -4,6 +4,10 @@
   flex-direction: column;
 }
 
+.ApplicationPageStepHeading {
+  margin-bottom: 20px;
+}
+
 .ApplicationPageChildrenContainer {
   width: 100%;
   display: flex;
@@ -14,5 +18,9 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.ApplicationPageButtonContainer--SingleButton {
   justify-content: flex-end;
 }
